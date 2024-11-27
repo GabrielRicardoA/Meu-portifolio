@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Ricarado Araújo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" >Sobre mim</a>
+            </li>
+            <li>
+                <a href="projeto.html">Projetos</a>
+            </li>
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div class="center">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFEUZh_SpcKtg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1732635129862?e=1738195200&v=beta&t=R1zGqLzk5QsryPd_VdcrHQeuNR1BeaoXi6P9-NQ-6CA"> </img>
+        </div>
+        <h1>Gabriel Ricardo Araújo</h1>
+        <h2>Aluno de Ciência Da Computação na Cesar School</h2>
+    </header>
+    <main>
+        <h3>Sobre mim</h3>
+        <p>
+            Oi, sou Gabriel Ricardo Araujo, estudante de Ciência da Computação e apaixonado por tecnologia desde a 
+            infância. Estou no 1º período do curso e dando os primeiros passos para me tornar um desenvolvedor. 
+            Meu foco é desenvolver competências essenciais como programação, resolução de problemas, e trabalho em 
+            equipe. Busco aplicar meu aprendizado contínuo para criar soluções inovadoras que atendam às necessidades 
+            do mercado de tecnologia. Se você procura alguém dedicado e em constante evolução, estou pronto para 
+            contribuir e crescer junto à sua empresa. Vamos conversar! 
+        </p>
+    </main>
+
+    <main>
+        <h3>Oque estou estou estudando?</h3>
+        <p>
+            Atualmente, estou focado em aprender Python, JavaScript, HTML e CSS. 
+            Meu objetivo é desenvolver habilidades sólidas para criar aplicações, websites interativos e 
+            automações. Estou dedicando tempo para dominar essas tecnologias e aplicá-las em projetos práticos, 
+            com o intuito de me tornar um desenvolvedor mais completo e capacitado.
+        </p>
+    </main>
+
+    <main>
+        <h3>Curiosidades sobre mim </h3>
+        <p>
+            Gosto bastante de futebol, jogos on-line e mergulhar.
+        </p>
+        <!-- Botão para mudar a cor de fundo -->
+        <button id="changeColorButton">Mudar Cor de Fundo</button>
+    </main>
+
+    <script>
+        // Função para mudar a cor de fundo
+        document.getElementById("changeColorButton").addEventListener("click", function() {
+            // Gera uma cor aleatória em formato hexadecimal
+            const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+            // Altera a cor de fundo da página
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script>
+</body>
+</html>
